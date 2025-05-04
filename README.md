@@ -74,31 +74,45 @@ Authorization: Bearer <token>
 Admin-only routes require the user to have the role: "admin".
 
 ✅ Example Usage
+
 Register:
+
 POST /api/auth/register
+
 {
     "name": "John Doe",
     "email": "john@example.com",
     "password": "password123"
 }
+
 Login:
+
 POST /api/auth/login
+
 {
     "email": "john@example.com",
     "password": "password123"
 }
+
 Response:
+
 {
     "token": "<JWT_TOKEN>"
 }
+
 Add a Review:
+
 POST /api/reviews/addReview
+
 Headers: Authorization: Bearer <token>
+
 {
     "book": "<book_id>",
     "rating": 5,
     "comment": "Fantastic book!"
 }
+
 🪪 License
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
